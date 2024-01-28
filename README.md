@@ -7,7 +7,7 @@ Summer Gallery is a ready to use "Web Gallery" library written in JavaScript and
 1) Link summer_gallery to html page using:
 </p>
 <pre>
-<code><link rel="stylesheet" href="summer_gallery.css"></code>
+<code>&lt;&#108;&#105;&#110;&#107;&#32;&#114;&#101;&#108;&equals;&quot;&#115;&#116;&#121;&#108;&#101;&#115;&#104;&#101;&#101;&#116;&quot;&#32;&#104;&#114;&#101;&#102;&equals;&quot;&#115;&#117;&#109;&#109;&#101;&#114;&lowbar;&#103;&#97;&#108;&#108;&#101;&#114;&#121;&period;&#99;&#115;&#115;&quot;&gt;</code>
 </pre>
 <p>
 2) Link summer_gallery js file to the end of the body tag:
