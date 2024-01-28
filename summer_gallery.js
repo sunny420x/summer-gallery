@@ -12,19 +12,22 @@ for(i = 0; i < summer_gallery.length; i++) {
 }
 
 function show_image(id) {
-    if(document.getElementById(id).className != "active") {
-        document.getElementById(id).setAttribute("class", "active")
-        document.getElementsByClassName("backdrop")[0].style.display = "block"
-        current_image = id
+    if(document.getElementById(id) != undefined) {
+        if(document.getElementById(id).className != "active") {
+            document.getElementById(id).setAttribute("class", "active")
+            document.getElementsByClassName("backdrop")[0].style.display = "block"
+            current_image = id
+        } else {
+            document.getElementById(id).setAttribute("class", "")
+            document.getElementsByClassName("backdrop")[0].style.display = "none"
+            current_image = ""
+        }
     } else {
-        document.getElementById(id).setAttribute("class", "")
-        document.getElementsByClassName("backdrop")[0].style.display = "none"
         current_image = ""
     }
 }
 
 document.addEventListener('keydown', (e) => {
-    console.log(e.key)
     if(current_image != undefined) {
         if(e.key === "ArrowLeft") {
             document.getElementById(current_image).setAttribute("class", "")
