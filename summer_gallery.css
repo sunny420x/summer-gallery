@@ -5,6 +5,7 @@
 }
 .summer_gallery img {
     width: 100%;
+    cursor: pointer;
 }
 
 .summer_gallery img.active {
@@ -12,6 +13,8 @@
     width: 80%;
     left: 10%;
     z-index: 2;
+    animation-name: show_image;
+    animation-duration: 0.4s;
 }
 
 .backdrop {
@@ -22,4 +25,15 @@
     position: fixed;
     top: 0;
     left: 0;
+}
+
+@keyframes show_image {
+    from {
+        width: 0%;
+        left: 50%;
+    }
+    to {
+        width: 80%;
+        left: 10%;
+    }
 }
