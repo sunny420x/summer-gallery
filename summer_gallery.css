@@ -11,6 +11,7 @@
 .summer_gallery img.active {
     position: absolute;
     width: 80%;
+    top: 5%;
     left: 10%;
     z-index: 2;
     animation-name: show_image;
